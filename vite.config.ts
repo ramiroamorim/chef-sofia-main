@@ -26,7 +26,7 @@ export default defineConfig({
     port: 5000,
     proxy: {
       '/api': {
-        target: process.env.VITE_API_URL || 'http://localhost:5000',
+        target: process.env.VITE_API_URL || 'https://ch-sofia-1.9k998j.easypanel.host/',
         changeOrigin: true,
       },
     },

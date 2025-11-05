@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Chef Sofia Moretti - Quiz Profilo di Gola</title>
+    <meta name="description" content="Scopri il tuo profilo di gola e accedi alla collezione privata di 500 ricette senza zucchero, senza glutine e senza lattosio della Chef Sofia Moretti." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+
+      <!-- Open Graph Tags -->
+      <meta property="og:title" content="Chef Sofia Moretti - Ricette italiane senza zucchero, senza glutine, senza lattosio" />
+      <meta property="og:description" content="500 ricette italiane senza zucchero, senza glutine e senza lattosio che nutrono, aiutano a dimagrire con piacere e riportano il tuo corpo in equilibrio." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://chefsofiamoretti.com/" />
+      <meta property="og:image" content="https://i.postimg.cc/jjb8SRzJ/Favicon-Sofia.jpg" />
+
+      <!-- Twitter Card -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Chef Sofia Moretti - Ricette italiane senza zucchero, senza glutine, senza lattosio" />
+      <meta name="twitter:description" content="500 ricette italiane senza zucchero, senza glutine e senza lattosio che nutrono, aiutano a dimagrire con piacere e riportano il tuo corpo in equilibrio." />
+      <meta name="twitter:image" content="https://i.postimg.cc/jjb8SRzJ/Favicon-Sofia.jpg" />
+
+     <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tw9luc8m72");
+   </script>
+
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW3XR8PQ32"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-GW3XR8PQ32');
+      </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      try {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;t.onerror=function(){console.error('❌ Facebook Pixel script failed to load');};
+        s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        // Preparar dados de Advanced Matching
+        var advancedMatching = {};
+
+        // Capturar cookies do Facebook
+        var fbpCookie = document.cookie.split('; ').find(row => row.startsWith('_fbp='));
+        var fbcCookie = document.cookie.split('; ').find(row => row.startsWith('_fbc='));
+        var externalIdCookie = document.cookie.split('; ').find(row => row.startsWith('external_id='));
+
+        if (fbpCookie) {
+          advancedMatching.fbp = fbpCookie.split('=')[1];
+        }
+
+        if (fbcCookie) {
+          advancedMatching.fbc = fbcCookie.split('=')[1];
+        }
+
+        if (externalIdCookie) {
+          advancedMatching.external_id = externalIdCookie.split('=')[1];
+        }
+
+        // Gerar external_id se não existir
+        if (!advancedMatching.external_id) {
+          var newExternalId = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+          });
+          advancedMatching.external_id = newExternalId;
+
+          // Salvar cookie
+          var expires = new Date();
+          expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000));
+          document.cookie = 'external_id=' + newExternalId + '; expires=' + expires.toUTCString() + '; path=/; SameSite=Lax';
+        }
+
+        // Gerar _fbp se não existir
+        if (!advancedMatching.fbp) {
+          var timestamp = Date.now();
+          var random = Math.floor(Math.random() * 2147483647);
+          var newFbp = 'fb.1.' + timestamp + '.' + random;
+          advancedMatching.fbp = newFbp;
+
+          // Salvar cookie
+          var expires = new Date();
+          expires.setTime(expires.getTime() + (90 * 24 * 60 * 60 * 1000));
+          document.cookie = '_fbp=' + newFbp + '; expires=' + expires.toUTCString() + '; path=/; SameSite=Lax';
+        }
+
+        // Verificar fbclid na URL para gerar _fbc
+        if (!advancedMatching.fbc) {
+          var urlParams = new URLSearchParams(window.location.search);
+          var fbclid = urlParams.get('fbclid');
+          if (fbclid) {
+            var timestamp = Date.now();
+            var newFbc = 'fb.1.' + timestamp + '.' + fbclid;
+            advancedMatching.fbc = newFbc;
+
+            // Salvar cookie
+            var expires = new Date();
+            expires.setTime(expires.getTime() + (90 * 24 * 60 * 60 * 1000));
+            document.cookie = '_fbc=' + newFbc + '; expires=' + expires.toUTCString() + '; path=/; SameSite=Lax';
+          }
+        }
+
+        // Adicionar User Agent
+        advancedMatching.client_user_agent = navigator.userAgent;
+
+        console.log('📊 Advanced Matching BÁSICO preparado (antes da API):', {
+          hasExternalId: !!advancedMatching.external_id,
+          hasFbp: !!advancedMatching.fbp,
+          hasFbc: !!advancedMatching.fbc,
+          hasUserAgent: !!advancedMatching.client_user_agent,
+          fields: Object.keys(advancedMatching)
+        });
+
+        // Inicializar pixel COM Advanced Matching básico
+        // Nota: Geolocalização é gerenciada pelo useVisitorTracking hook
+        fbq('init', '1053618620169381', advancedMatching);
+
+        // Verificar se pixel carregou
+        console.log('🎯 Facebook Pixel inicializado COM Advanced Matching BÁSICO. Status:', {
+          fbqExists: typeof fbq !== 'undefined',
+          pixelId: '1053618620169381',
+          advancedMatchingFields: Object.keys(advancedMatching).length,
+          timestamp: new Date().toISOString()
+        });
+
+        // Enviar PageView e InitiateCheckout
+        fbq('track', 'PageView');
+        fbq('track', 'InitiateCheckout', {
+          content_name: 'Chef Sofia Quiz Landing',
+          content_category: 'Quiz',
+          content_ids: ['chef-sofia-quiz'],
+          value: 17,
+          currency: 'EUR'
+        });
+
+        console.log('Eventos enviados: PageView e InitiateCheckout');
+
+      } catch(e) {
+        console.error('❌ Facebook Pixel initialization failed:', e);
+      }
+    </script>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Utmify Script -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+    <!-- End Utmify Script -->
+  </head>
+
+  <body>
+    <!-- Facebook Pixel noscript -->
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1053618620169381&ev=PageView&noscript=1"
+    /></noscript>
+
+    <!-- Conteúdo do seu site aqui -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -10,13 +10,6 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=5000
-      # Adicione suas variáveis de ambiente aqui ou use um arquivo .env
-      - VITE_APIIP_NET_API_KEY=${VITE_APIIP_NET_API_KEY}
-      - HOTMART_CLIENT_ID=${HOTMART_CLIENT_ID}
-      - HOTMART_CLIENT_SECRET=${HOTMART_CLIENT_SECRET}
-      - HOTMART_BASIC_TOKEN=${HOTMART_BASIC_TOKEN}
-      - FACEBOOK_PIXEL_ID=${FACEBOOK_PIXEL_ID}
-      - FACEBOOK_ACCESS_TOKEN=${FACEBOOK_ACCESS_TOKEN}
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:5000/"]
